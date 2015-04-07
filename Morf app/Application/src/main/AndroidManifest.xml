@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.actionbarcompat.morf"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
+    <!--
+        Theme is set on the application so that our custom theme is used by
+        default by all Activities
+    -->
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Styled" >
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+
+            <!-- Launcher Intent filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+    </activity>
+        <activity android:name=".MainActivity"
+            android:parentActivityName=".LoginActivity">
+
+            <!--
+                In this example set the Activity to have a split action bar when the device's
+                display is narrow. In ActionBarCompat this is done by setting the
+                'android.support.UI_OPTIONS' metadata field to 'splitActionBarWhenNarrow'.
+            -->
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.FindFriends"
+            android:label="@string/title_activity_find_friends"
+            android:parentActivityName="com.example.android.actionbarcompat.morf.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.actionbarcompat.morf.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.CreateGroup"
+            android:label="@string/title_activity_create_group"
+            android:parentActivityName="com.example.android.actionbarcompat.morf.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.actionbarcompat.morf.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.CashOut"
+            android:label="@string/title_activity_cash_out"
+            android:parentActivityName="com.example.android.actionbarcompat.morf.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.actionbarcompat.morf.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.OpenBanks"
+            android:label="@string/title_activity_open_banks"
+            android:parentActivityName="com.example.android.actionbarcompat.morf.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.actionbarcompat.morf.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

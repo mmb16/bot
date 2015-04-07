@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <Button style="@style/Widget.SampleMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Ifriend"
+        android:onClick="findFriends"/>
+
+    <Button
+        android:id="@+id/Cgroup"
+        style="@style/Widget.SampleMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CGroup"
+        android:onClick="createGroup"/>
+
+    <Button
+        android:id="@+id/banks"
+        android:layout_width="match_parent"
+        style="@style/Widget.SampleMessage"
+        android:layout_height="wrap_content"
+        android:text="@string/Banks"
+        android:onClick="openBanks"/>
+
+    <Button
+        android:id="@+id/casho"
+        style="@style/Widget.SampleMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CashO"
+        android:onClick="cashOut"/>
+
+
+
+</LinearLayout><!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/layout/profile_layout.xml -->

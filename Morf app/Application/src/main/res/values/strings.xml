@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter Message</string>
+    <string name="button_send">Send</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_message">MY Message</string>
+    <string name="pending">Pending</string>
+    <string name="history">History</string>
+    <string name="action_search">Search</string>
+    <string name="action_split">Split</string>
+    <string name="action_pay">Pay</string>
+    <string name="action_request">Request</string>
+    <string name="pendingT">Pending Transactions</string>
+    <string name="THistory">Transaction History</string>
+    <string name="Ifriend">Invite Friend</string>
+    <string name="CGroup">Create Group</string>
+    <string name="Banks">Banks/Cards</string>
+    <string name="CashO">Cash Out</string>
+    <string name="CO1">You Have Cashed Out!</string>
+    <string name="IF1">Click to invite friends</string>
+    <string name="CG1">Choose friends for group</string>
+    <string name="OB1">Select your bank</string>
+
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_location">Location</string>
+    <string name="menu_settings">Settings</string>
+    <string name="main_description">This is a basic Activity showing an Action Bar which has been
+        styled.
+    </string>
+    <string name="title_activity_find_friends">FindFriends</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_create_group">CreateGroup</string>
+    <string name="title_activity_cash_out">CashOut</string>
+    <string name="title_activity_open_banks">OpenBanks</string>
+
+</resources>
