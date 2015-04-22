@@ -406,7 +406,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
             }
 
             // TODO: register the new account here.
-            return true;
+            return false;
         }
 
         @Override

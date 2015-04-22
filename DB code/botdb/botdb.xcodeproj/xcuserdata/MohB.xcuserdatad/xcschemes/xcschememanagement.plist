@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>morfdb.xcscheme</key>
+		<key>botdb.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>519043011AAFDBA300B0752B</key>
+		<key>513706E51AE86C8000562F00</key>
 		<dict>
 			<key>primary</key>
 			<true/>

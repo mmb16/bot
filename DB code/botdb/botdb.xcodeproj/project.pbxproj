@@ -6,68 +6,61 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXFileReference section */
-		519043071AAFDC2A00B0752B /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
-		519043081AAFDD4E00B0752B /* test2.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test2.py; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
 /* Begin PBXGroup section */
-		519042FC1AAFDBA300B0752B = {
+		513706E01AE86C8000562F00 = {
 			isa = PBXGroup;
 			children = (
-				519043071AAFDC2A00B0752B /* test.py */,
-				519043081AAFDD4E00B0752B /* test2.py */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		519043011AAFDBA300B0752B /* morfdb */ = {
+		513706E51AE86C8000562F00 /* botdb */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = 519043041AAFDBA300B0752B /* Build configuration list for PBXLegacyTarget "morfdb" */;
+			buildConfigurationList = 513706E81AE86C8000562F00 /* Build configuration list for PBXLegacyTarget "botdb" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/python;
 			dependencies = (
 			);
-			name = morfdb;
+			name = botdb;
 			passBuildSettingsInEnvironment = 1;
-			productName = morfdb;
+			productName = botdb;
 		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXProject section */
-		519042FD1AAFDBA300B0752B /* Project object */ = {
+		513706E11AE86C8000562F00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = cted;
 				TargetAttributes = {
-					519043011AAFDBA300B0752B = {
-						CreatedOnToolsVersion = 6.1.1;
+					513706E51AE86C8000562F00 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
-			buildConfigurationList = 519043001AAFDBA300B0752B /* Build configuration list for PBXProject "morfdb" */;
+			buildConfigurationList = 513706E41AE86C8000562F00 /* Build configuration list for PBXProject "botdb" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 519042FC1AAFDBA300B0752B;
+			mainGroup = 513706E01AE86C8000562F00;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				519043011AAFDBA300B0752B /* morfdb */,
+				513706E51AE86C8000562F00 /* botdb */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		519043021AAFDBA300B0752B /* Debug */ = {
+		513706E61AE86C8000562F00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -85,9 +78,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -107,7 +102,7 @@
 			};
 			name = Debug;
 		};
-		519043031AAFDBA300B0752B /* Release */ = {
+		513706E71AE86C8000562F00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -124,11 +119,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -141,7 +137,7 @@
 			};
 			name = Release;
 		};
-		519043051AAFDBA300B0752B /* Debug */ = {
+		513706E91AE86C8000562F00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUGGING_SYMBOLS = YES;
@@ -153,7 +149,7 @@
 			};
 			name = Debug;
 		};
-		519043061AAFDBA300B0752B /* Release */ = {
+		513706EA1AE86C8000562F00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_CFLAGS = "";
@@ -165,25 +161,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		519043001AAFDBA300B0752B /* Build configuration list for PBXProject "morfdb" */ = {
+		513706E41AE86C8000562F00 /* Build configuration list for PBXProject "botdb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				519043021AAFDBA300B0752B /* Debug */,
-				519043031AAFDBA300B0752B /* Release */,
+				513706E61AE86C8000562F00 /* Debug */,
+				513706E71AE86C8000562F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		519043041AAFDBA300B0752B /* Build configuration list for PBXLegacyTarget "morfdb" */ = {
+		513706E81AE86C8000562F00 /* Build configuration list for PBXLegacyTarget "botdb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				519043051AAFDBA300B0752B /* Debug */,
-				519043061AAFDBA300B0752B /* Release */,
+				513706E91AE86C8000562F00 /* Debug */,
+				513706EA1AE86C8000562F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 519042FD1AAFDBA300B0752B /* Project object */;
+	rootObject = 513706E11AE86C8000562F00 /* Project object */;
 }
