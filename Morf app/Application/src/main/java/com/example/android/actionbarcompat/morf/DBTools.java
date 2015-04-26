@@ -9,9 +9,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Created by csimon on 12/11/13.
- */
+
 public class DBTools extends SQLiteOpenHelper {
 
     private final static int    DB_VERSION = 10;
