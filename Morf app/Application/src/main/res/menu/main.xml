@@ -48,4 +48,8 @@
         android:title="@string/action_settings"
         support:showAsAction="never" />
 
+    <item android:id="@+id/action_sign_out"
+        android:title="@string/action_sign_out"
+        support:showAsAction="never"/>
+
 </menu>

@@ -4,9 +4,12 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 
+import android.app.AlertDialog;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.CursorLoader;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
@@ -26,6 +29,11 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import android.widget.Toast;
+import com.example.android.actionbarcompat.morf.User;
+import com.example.android.actionbarcompat.morf.JSONParser;
+import com.example.android.actionbarcompat.morf.DBTools;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -48,10 +56,11 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
     /**
      * A dummy authentication store containing known user names and passwords.
      * TODO: remove after connecting to a real authentication system.
-     */
+     *
     private static final String[] DUMMY_CREDENTIALS = new String[]{
             "foo@example.com:hello", "bar@example.com:world"
     };
+     */
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
      */
@@ -116,6 +125,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
         mProgressView = findViewById(R.id.login_progress);
         mEmailLoginFormView = findViewById(R.id.email_login_form);
         mSignOutButtons = findViewById(R.id.plus_sign_out_buttons);
+
     }
 
     private void populateAutoComplete() {
@@ -127,6 +137,8 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
             new SetupEmailAutoCompleteTask().execute(null, null);
         }
     }
+
+    private User myUser;
 
 
     /**
@@ -177,7 +189,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             showProgress(true);
-            mAuthTask = new UserLoginTask(email, password);
+            mAuthTask = new UserLoginTask(email, password, this);
             mAuthTask.execute((Void) null);
         }
     }
@@ -247,6 +259,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
         });
     }
 
+
     @Override
     protected void onPlusClientBlockingUI(boolean show) {
         showProgress(show);
@@ -256,6 +269,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
     protected void updateConnectButtonState() {
         //TODO: Update this logic to also handle the user logged in by email.
         boolean connected = getPlusClient().isConnected();
+
 
         mSignOutButtons.setVisibility(connected ? View.VISIBLE : View.GONE);
         mPlusSignInButton.setVisibility(connected ? View.GONE : View.VISIBLE);
@@ -380,18 +394,39 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
 
         private final String mEmail;
         private final String mPassword;
+        private final Context mContext;
 
-        UserLoginTask(String email, String password) {
+        UserLoginTask(String email, String password, Context context) {
             mEmail = email;
             mPassword = password;
+            mContext = context;
         }
 
         @Override
         protected Boolean doInBackground(Void... params) {
+            DBTools dbtools = null;
             // TODO: attempt authentication against a network service.
 
             try {
-                // Simulate network access.
+                dbtools = new DBTools(mContext);
+                myUser = dbtools.getUser(mEmail);
+
+                if (myUser.userId > 0) {
+                    //account exists, check password.
+                    if (myUser.password.equals(mPassword))
+                        return true;
+                    else
+                        return false;
+                } else {
+                    myUser.password = mPassword;
+                    return true;
+                }
+            } finally {
+                if (dbtools != null)
+                    dbtools.close();
+            }
+        }
+             /**   // Simulate network access.
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 return false;
@@ -407,7 +442,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
 
             // TODO: register the new account here.
             return false;
-        }
+        }*/
 
         @Override
         protected void onPostExecute(final Boolean success) {
@@ -415,14 +450,47 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
             showProgress(false);
 
             if (success) {
-                finish();
+                if (myUser.userId>0){
+                        finish();
                 Intent myIntent = new Intent(LoginActivity.this,MainActivity.class);
                 LoginActivity.this.startActivity(myIntent);
+            } else {
+                    DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            switch (which) {
+                                case DialogInterface.BUTTON_POSITIVE:
+                                    DBTools dbTools = null;
+                                    try {
+                                        finish();
+                                        dbTools = new DBTools(mContext);
+                                        myUser = dbTools.insertUser(myUser);
+                                        Toast myToast = Toast.makeText(mContext, R.string.updatingReport, Toast.LENGTH_SHORT);
+                                        myToast.show();
+                                        Intent myIntent = new Intent(LoginActivity.this, MainActivity.class);
+                                        LoginActivity.this.startActivity(myIntent);
+                                    } finally {
+                                        if (dbTools != null)
+                                            dbTools.close();
+                                    }
+                                    break;
+
+                                case DialogInterface.BUTTON_NEGATIVE:
+                                    mPasswordView.setError(getString(R.string.error_incorrect_password));
+                                    mPasswordView.requestFocus();
+                            }
+                        }
+                    };
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this.mContext);
+                    builder.setMessage(R.string.confirm_registry).setPositiveButton(R.string.yes, dialogClickListener)
+                            .setNegativeButton(R.string.no, dialogClickListener).show();
+                }
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
             }
         }
+
 
         @Override
         protected void onCancelled() {

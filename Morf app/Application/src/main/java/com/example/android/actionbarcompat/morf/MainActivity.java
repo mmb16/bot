@@ -95,6 +95,19 @@ public class MainActivity extends ActionBarActivity  {
     private void openSettings() {
         startActivity(new Intent(Settings.ACTION_SETTINGS));
     }
+    private void signOut() {
+        startActivity(new Intent (this, LoginActivity.class));
+    }
+
+    private void openSplit() {
+        startActivity(new Intent (this, Split.class));
+    }
+    private void openPay() {
+        startActivity(new Intent (this, Pay.class));
+    }
+    private void openRequest() {
+        startActivity(new Intent (this, Request.class));
+    }
 
 
 
@@ -111,7 +124,7 @@ public class MainActivity extends ActionBarActivity  {
             case R.id.action_settings:
                 openSettings();
                 return true;
-            /**case R.id.action_split:
+            case R.id.action_split:
                 openSplit();
                 return true;
             case R.id.action_request:
@@ -119,7 +132,9 @@ public class MainActivity extends ActionBarActivity  {
                 return true;
             case R.id.action_pay:
                 openPay();
-                return true; */
+                return true;
+            case R.id.action_sign_out:
+                signOut();
             default:
                 return super.onOptionsItemSelected(item);
         }

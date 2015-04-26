@@ -13,7 +13,9 @@
     <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.READ_PROFILE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
     <!--
         Theme is set on the application so that our custom theme is used by
         default by all Activities
@@ -23,7 +25,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Styled" >
         <activity
-            android:name="com.example.android.actionbarcompat.morf.LoginActivity"
+            android:name=".LoginActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateHidden" >
 
@@ -33,10 +35,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-    </activity>
-        <activity android:name=".MainActivity"
-            android:parentActivityName=".LoginActivity">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".LoginActivity" >
 
             <!--
                 In this example set the Activity to have a split action bar when the device's
@@ -48,33 +50,33 @@
                 android:value="splitActionBarWhenNarrow" />
         </activity>
         <activity
-            android:name="com.example.android.actionbarcompat.morf.FindFriends"
+            android:name=".FindFriends"
             android:label="@string/title_activity_find_friends"
-            android:parentActivityName="com.example.android.actionbarcompat.morf.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.actionbarcompat.morf.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.android.actionbarcompat.morf.CreateGroup"
+            android:name=".CreateGroup"
             android:label="@string/title_activity_create_group"
-            android:parentActivityName="com.example.android.actionbarcompat.morf.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.actionbarcompat.morf.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.android.actionbarcompat.morf.CashOut"
+            android:name=".CashOut"
             android:label="@string/title_activity_cash_out"
-            android:parentActivityName="com.example.android.actionbarcompat.morf.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.actionbarcompat.morf.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.android.actionbarcompat.morf.OpenBanks"
+            android:name=".OpenBanks"
             android:label="@string/title_activity_open_banks"
-            android:parentActivityName="com.example.android.actionbarcompat.morf.MainActivity" >
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.actionbarcompat.morf.MainActivity" />
@@ -85,7 +87,7 @@
             android:value="@integer/google_play_services_version" />
         <!-- All Product Activity -->
         <activity
-            android:name="com.example.android.actionbarcompat.morf.AllProductsActivity"
+            android:name=".AllProductsActivity"
             android:label="All Products" >
         </activity>
 
@@ -99,6 +101,18 @@
         <activity
             android:name=".EditProductActivity"
             android:label="Edit Product" >
+        </activity>
+        <activity
+            android:name=".Split"
+            android:label="@string/title_activity_split" >
+        </activity>
+        <activity
+            android:name=".Pay"
+            android:label="@string/title_activity_pay" >
+        </activity>
+        <activity
+            android:name=".Request"
+            android:label="@string/title_activity_request" >
         </activity>
     </application>
 

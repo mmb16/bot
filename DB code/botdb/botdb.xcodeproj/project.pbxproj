@@ -6,10 +6,17 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		513706EC1AE86DCB00562F00 /* test2.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = test2.py; path = ../../../test2.py; sourceTree = "<group>"; };
+		513706ED1AE86DE700562F00 /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = test.py; path = ../../../test.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		513706E01AE86C8000562F00 = {
 			isa = PBXGroup;
 			children = (
+				513706ED1AE86DE700562F00 /* test.py */,
+				513706EC1AE86DCB00562F00 /* test2.py */,
 			);
 			sourceTree = "<group>";
 		};
@@ -23,6 +30,7 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/python;
+			buildWorkingDirectory = "/Users/MohB/Desktop/bot/DB code/botdb";
 			dependencies = (
 			);
 			name = botdb;

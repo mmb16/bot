@@ -89,6 +89,35 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+        <!-- All Product Activity -->
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.AllProductsActivity"
+            android:label="All Products" >
+        </activity>
+
+        <!-- Add Product Activity -->
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.NewProductActivity"
+            android:label="Add New Product" >
+        </activity>
+
+        <!-- Edit Product Activity -->
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.EditProductActivity"
+            android:label="Edit Product" >
+        </activity>
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.Split"
+            android:label="@string/title_activity_split" >
+        </activity>
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.Pay"
+            android:label="@string/title_activity_pay" >
+        </activity>
+        <activity
+            android:name="com.example.android.actionbarcompat.morf.Request"
+            android:label="@string/title_activity_request" >
+        </activity>
     </application>
 
 </manifest>

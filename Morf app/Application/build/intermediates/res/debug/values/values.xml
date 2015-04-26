@@ -367,6 +367,7 @@
     <eat-comment/>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_out">Sign Out</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_split">Split</string>
@@ -410,6 +411,9 @@
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="commono_google_play_services_api_unavailable_text">This app requires one or more Google Play services that are not currently
 available. Please contact the developer for assistance.</string>
+    <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="confirm_registry">Email not found. You want to create a new user with that email and password?</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
@@ -447,6 +451,7 @@ available. Please contact the developer for assistance.</string>
     <string name="menu_location">Location</string>
     <string name="menu_refresh">Refresh</string>
     <string name="menu_settings">Settings</string>
+    <string name="no">No</string>
     <string name="pending">Pending</string>
     <string name="pendingT">Pending Transactions</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/values/strings_activity_login.xml -->
@@ -454,7 +459,7 @@ available. Please contact the developer for assistance.</string>
     <string name="plus_disconnect">Disconnect from Google+</string>
     <string name="plus_sign_out">Switch Google+ account</string>
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
+    <string name="prompt_password">Password</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
@@ -467,14 +472,21 @@ available. Please contact the developer for assistance.</string>
     <string name="title_activity_find_friends">FindFriends</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/values/strings_activity_login.xml -->
     <eat-comment/>
-    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_login">BoT</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_open_banks">OpenBanks</string>
+    <string name="title_activity_pay">Pay</string>
+    <string name="title_activity_request">Request</string>
+    <string name="title_activity_split">Split</string>
+    <string name="updatingReport">Updating</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
+    <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="yes">Yes!</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="Theme.Sample"/>

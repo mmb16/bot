@@ -38,4 +38,12 @@
     <string name="title_activity_cash_out">CashOut</string>
     <string name="title_activity_open_banks">OpenBanks</string>
 
+    <string name="updatingReport">Updating</string>
+    <string name="yes">Yes!</string>
+    <string name="no">No</string>
+    <string name="confirm_registry">Email not found. You want to create a new user with that email and password?</string>
+    <string name="title_activity_split">Split</string>
+    <string name="title_activity_pay">Pay</string>
+    <string name="title_activity_request">Request</string>
+
 </resources>

@@ -254,6 +254,13 @@
         <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-959cd0386a67a668a4d97bb61732be7aaa69c31b.jar" />
     </item>
     <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/gson-2.3.1-7c982b3e12aa672091086d762a074dd53056355b.jar" />
+    </item>
+    <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.1"
