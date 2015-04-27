@@ -9,6 +9,20 @@
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-c3900f1036ddb29e74fc2e76298cfdd7591a7e49.jar" />
     </item>
     <item
+        jar="/Users/MohB/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-6b63ad39fb7b8e700497a5bf9c611ea4dc0e3d38.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-0ef435f86349d6ddeb1c74e9a7d408b091d938eb.jar" />
+    </item>
+    <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.1"
@@ -21,6 +35,13 @@
         revision="21.1.1"
         sha1="b017100da14f9c158c9f5f2f508333c224b24a7c">
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-e7960312237f8a82095bef8e5d45c9450c660f40.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-b95f1a9c3d0e746ab06d1859d201f34a19d4e61d.jar" />
     </item>
     <item
         jar="/Users/MohB/Desktop/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
@@ -44,11 +65,25 @@
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-3625c25e7ad016a89be7e7f8f58eda92f4ad64b1.jar" />
     </item>
     <item
-        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/classes.jar"
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
         jumboMode="false"
-        revision="21.1.1"
-        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
-        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-853423c533908f3ae6fd5e24caab473ec9cb43d6.jar" />
+        revision="21.1.2"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-959cd0386a67a668a4d97bb61732be7aaa69c31b.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c9e0c6fc22b22b96d0db564cf073ab6f288bb758">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-b4f635801f35698edfd7c322f0b917bc4cb916da.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-a024a061ed601dcb1782875c2e7126bf4bb1e575.jar" />
     </item>
     <item
         jar="/Users/MohB/Desktop/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
@@ -107,6 +142,13 @@
         <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-024db4b0f9c55eb3e90c587b71d6a6fbe8d2e9f2.jar" />
     </item>
     <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-81ddef86334c9c6f8d43fb35c4cfac2b28e880f5.jar" />
+    </item>
+    <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.1"
@@ -140,6 +182,27 @@
         revision="21.1.1"
         sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
         <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-f7e23f2922e758546aeb586d56bc72b881065903.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-fe9c178c1d0547fd0972b4e928f743bf207de137.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-af19de94ce7a6e64422ba9ce89e1131a5504ef79.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-531cc26fe4825071b4910bd7dfa29b0326cd49b3.jar" />
     </item>
     <item
         jar="/Users/MohB/Desktop/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
@@ -177,6 +240,13 @@
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-5afedb85fb7f16db96baf4d722e813738085db1b.jar" />
     </item>
     <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-8a9a61f79f9b2c71276dc98d03f4b348ad191d13.jar" />
+    </item>
+    <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.1"
@@ -189,6 +259,13 @@
         revision="21.1.1"
         sha1="9742ced04aafd9ac97dd2c66c1aa0e32d2ae7e54">
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-b8b37de83e45d03e1085424140130f7f9bc54e26.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-ae9010a1ffbb25c238a6d301250f796b03554287.jar" />
     </item>
     <item
         jar="/Users/MohB/Desktop/Morf app/Application/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
@@ -212,11 +289,11 @@
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-6b63ad39fb7b8e700497a5bf9c611ea4dc0e3d38.jar" />
     </item>
     <item
-        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/21.0.2/classes.jar"
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
         jumboMode="false"
-        revision="21.1.1"
-        sha1="9742ced04aafd9ac97dd2c66c1aa0e32d2ae7e54">
-        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-71d255b7146473f8462c1f315b433b323ec1b82a.jar" />
+        revision="21.1.2"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-ad350a24defc57952b84043005c09c255b584cb2.jar" />
     </item>
     <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
@@ -247,18 +324,18 @@
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-8ba7b19e3f3619be2e552e74e9aa544f9543981b.jar" />
     </item>
     <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-7b21d0183c0bdbb2f31b6622e8a7be02d8c894da.jar" />
+    </item>
+    <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
         <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-959cd0386a67a668a4d97bb61732be7aaa69c31b.jar" />
-    </item>
-    <item
-        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/gson-2.3.1.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/gson-2.3.1-7c982b3e12aa672091086d762a074dd53056355b.jar" />
     </item>
     <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
@@ -282,6 +359,41 @@
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-5e3e1ff2b23edf7df078ade222f03b13f44cfa30.jar" />
     </item>
     <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-59f96b09b59ddce8e44ec8e38deaf8de1b3f6117.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-24cd6f11b337bbf565e56c7c7f06a161732884b1.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-61dc2c2e012c9fd3c1eba345a5333119404ed3ea.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-3edb6f4b64d7b9b6f778f565dee0722c6c568c6e.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-024db4b0f9c55eb3e90c587b71d6a6fbe8d2e9f2.jar" />
+    </item>
+    <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.1"
@@ -289,11 +401,18 @@
         <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-81ddef86334c9c6f8d43fb35c4cfac2b28e880f5.jar" />
     </item>
     <item
-        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/classes.jar"
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
         jumboMode="false"
-        revision="21.1.1"
-        sha1="b017100da14f9c158c9f5f2f508333c224b24a7c">
-        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-84f0a6aa90c8809d4533f2d3d78cb6ae8111cced.jar" />
+        revision="21.1.2"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-c6a5a32c2907ab0a11b7e968aa7b64e75300d331.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-f7e23f2922e758546aeb586d56bc72b881065903.jar" />
     </item>
     <item
         jar="/Users/MohB/Desktop/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
@@ -317,6 +436,13 @@
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-685cdd6e628b4a4df3ec941ad204ebd4bb450526.jar" />
     </item>
     <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-3fbb56cd506bc339f7c6d97a9a9bd5945c6d1e79.jar" />
+    </item>
+    <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.1"
@@ -329,6 +455,13 @@
         revision="21.1.1"
         sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-60947eeecd8354bbfb64b522de09cc0b0d439674.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="11842de6a309c447b3a3d60d73ad637a87c58994">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-82be0a76ca15d03dbbb5c3bf3214f731c2ea908d.jar" />
     </item>
     <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
@@ -350,6 +483,20 @@
         revision="21.1.1"
         sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-e681454598c35a9f3b0407515cca27533868ddfd.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-cd4f4bbd4528705abca19f6fffb83407b16eba14.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/classes-f5e6109354d0068fb758584ef198fed181be666b.jar" />
     </item>
 
 </items>

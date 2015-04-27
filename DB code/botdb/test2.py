@@ -1,12 +1,12 @@
 import mysql.connector
 from mysql.connector import errorcode
 #connect to server
-conn = mysql.connector.connect(user='mmb16', password='MOHbdoudy1',
-                              host='cteddb.c3jkcjrdyabp.us-west-2.rds.amazonaws.com',
-                              database='morf')
-c= conn.cursor()
+#conn = mysql.connector.connect(user='mmb16', password='MOHbdoudy1',
+#                             host='cteddb.c3jkcjrdyabp.us-west-2.rds.amazonaws.com',
+#                             database='morf')
+#c= conn.cursor()
 
-DB_NAME = 'morf'
+#DB_NAME = 'morf'
 
 '''
 def create_database(cursor):

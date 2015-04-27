@@ -3,19 +3,16 @@ package com.example.android.actionbarcompat.morf;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
-
-import android.app.AlertDialog;
+import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.ContentResolver;
-import android.content.Context;
 import android.content.CursorLoader;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Build.VERSION;
+
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -30,37 +27,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import android.widget.Toast;
-import com.example.android.actionbarcompat.morf.User;
-import com.example.android.actionbarcompat.morf.JSONParser;
-import com.example.android.actionbarcompat.morf.DBTools;
-
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
-import com.google.android.gms.common.SignInButton;
-
 import java.util.ArrayList;
 import java.util.List;
 
 
 /**
- * A login screen that offers login via email/password and via Google+ sign in.
- * <p/>
- * ************ IMPORTANT SETUP NOTES: ************
- * In order for Google+ sign in to work with your app, you must first go to:
- * https://developers.google.com/+/mobile/android/getting-started#step_1_enable_the_google_api
- * and follow the steps in "Step 1" to create an OAuth 2.0 client for your package.
+ * A login screen that offers login via email/password.
  */
-public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<Cursor> {
+public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 
     /**
      * A dummy authentication store containing known user names and passwords.
      * TODO: remove after connecting to a real authentication system.
-     *
+     */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
             "foo@example.com:hello", "bar@example.com:world"
     };
-     */
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
      */
@@ -70,32 +52,12 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
     private View mProgressView;
-    private View mEmailLoginFormView;
-    private SignInButton mPlusSignInButton;
-    private View mSignOutButtons;
     private View mLoginFormView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
-        // Find the Google+ sign in button.
-        mPlusSignInButton = (SignInButton) findViewById(R.id.plus_sign_in_button);
-        if (supportsGooglePlayServices()) {
-            // Set a listener to connect the user when the G+ button is clicked.
-            mPlusSignInButton.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    signIn();
-                }
-            });
-        } else {
-            // Don't offer G+ sign in if the app's version is too low to support Google Play
-            // Services.
-            mPlusSignInButton.setVisibility(View.GONE);
-            return;
-        }
+        setContentView(R.layout.activity_login2);
 
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
@@ -123,22 +85,11 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
-        mEmailLoginFormView = findViewById(R.id.email_login_form);
-        mSignOutButtons = findViewById(R.id.plus_sign_out_buttons);
-
     }
 
     private void populateAutoComplete() {
-        if (VERSION.SDK_INT >= 14) {
-            // Use ContactsContract.Profile (API 14+)
-            getLoaderManager().initLoader(0, null, this);
-        } else if (VERSION.SDK_INT >= 8) {
-            // Use AccountManager (API 8+)
-            new SetupEmailAutoCompleteTask().execute(null, null);
-        }
+        getLoaderManager().initLoader(0, null, this);
     }
-
-    private User myUser;
 
 
     /**
@@ -189,7 +140,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             showProgress(true);
-            mAuthTask = new UserLoginTask(email, password, this);
+            mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
         }
     }
@@ -241,64 +192,6 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
     }
 
     @Override
-    protected void onPlusClientSignIn() {
-        //Set up sign out and disconnect buttons.
-        Button signOutButton = (Button) findViewById(R.id.plus_sign_out_button);
-        signOutButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                signOut();
-            }
-        });
-        Button disconnectButton = (Button) findViewById(R.id.plus_disconnect_button);
-        disconnectButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                revokeAccess();
-            }
-        });
-    }
-
-
-    @Override
-    protected void onPlusClientBlockingUI(boolean show) {
-        showProgress(show);
-    }
-
-    @Override
-    protected void updateConnectButtonState() {
-        //TODO: Update this logic to also handle the user logged in by email.
-        boolean connected = getPlusClient().isConnected();
-
-
-        mSignOutButtons.setVisibility(connected ? View.VISIBLE : View.GONE);
-        mPlusSignInButton.setVisibility(connected ? View.GONE : View.VISIBLE);
-        mEmailLoginFormView.setVisibility(connected ? View.GONE : View.VISIBLE);
-    }
-
-    @Override
-    protected void onPlusClientRevokeAccess() {
-        // TODO: Access to the user's G+ account has been revoked.  Per the developer terms, delete
-        // any stored user data here.
-    }
-
-    @Override
-    protected void onPlusClientSignOut() {
-
-    }
-
-    /**
-     * Check if the device supports Google Play Services.  It's best
-     * practice to check first rather than handling this as an error case.
-     *
-     * @return whether the device supports Google Play Services
-     */
-    private boolean supportsGooglePlayServices() {
-        return GooglePlayServicesUtil.isGooglePlayServicesAvailable(this) ==
-                ConnectionResult.SUCCESS;
-    }
-
-    @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return new CursorLoader(this,
                 // Retrieve data rows for the device user's 'profile' contact.
@@ -332,11 +225,6 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
 
     }
 
-    @Override
-    public void onConnectionSuspended(int i) {
-
-    }
-
     private interface ProfileQuery {
         String[] PROJECTION = {
                 ContactsContract.CommonDataKinds.Email.ADDRESS,
@@ -347,35 +235,6 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
         int IS_PRIMARY = 1;
     }
 
-    /**
-     * Use an AsyncTask to fetch the user's email addresses on a background thread, and update
-     * the email text field with results on the main UI thread.
-     */
-    class SetupEmailAutoCompleteTask extends AsyncTask<Void, Void, List<String>> {
-
-        @Override
-        protected List<String> doInBackground(Void... voids) {
-            ArrayList<String> emailAddressCollection = new ArrayList<String>();
-
-            // Get all emails from the user's contacts and copy them to a list.
-            ContentResolver cr = getContentResolver();
-            Cursor emailCur = cr.query(ContactsContract.CommonDataKinds.Email.CONTENT_URI, null,
-                    null, null, null);
-            while (emailCur.moveToNext()) {
-                String email = emailCur.getString(emailCur.getColumnIndex(ContactsContract
-                        .CommonDataKinds.Email.DATA));
-                emailAddressCollection.add(email);
-            }
-            emailCur.close();
-
-            return emailAddressCollection;
-        }
-
-        @Override
-        protected void onPostExecute(List<String> emailAddressCollection) {
-            addEmailsToAutoComplete(emailAddressCollection);
-        }
-    }
 
     private void addEmailsToAutoComplete(List<String> emailAddressCollection) {
         //Create adapter to tell the AutoCompleteTextView what to show in its dropdown list.
@@ -394,39 +253,18 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
 
         private final String mEmail;
         private final String mPassword;
-        private final Context mContext;
 
-        UserLoginTask(String email, String password, Context context) {
+        UserLoginTask(String email, String password) {
             mEmail = email;
             mPassword = password;
-            mContext = context;
         }
 
         @Override
         protected Boolean doInBackground(Void... params) {
-            DBTools dbtools = null;
             // TODO: attempt authentication against a network service.
 
             try {
-                dbtools = new DBTools(mContext);
-                myUser = dbtools.getUser(mEmail);
-
-                if (myUser.userId > 0) {
-                    //account exists, check password.
-                    if (myUser.password.equals(mPassword))
-                        return true;
-                    else
-                        return false;
-                } else {
-                    myUser.password = mPassword;
-                    return true;
-                }
-            } finally {
-                if (dbtools != null)
-                    dbtools.close();
-            }
-        }
-             /**   // Simulate network access.
+                // Simulate network access.
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 return false;
@@ -441,8 +279,8 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
             }
 
             // TODO: register the new account here.
-            return false;
-        }*/
+            return true;
+        }
 
         @Override
         protected void onPostExecute(final Boolean success) {
@@ -450,47 +288,14 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
             showProgress(false);
 
             if (success) {
-                if (myUser.userId>0){
-                        finish();
+                finish();
                 Intent myIntent = new Intent(LoginActivity.this,MainActivity.class);
                 LoginActivity.this.startActivity(myIntent);
-            } else {
-                    DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            switch (which) {
-                                case DialogInterface.BUTTON_POSITIVE:
-                                    DBTools dbTools = null;
-                                    try {
-                                        finish();
-                                        dbTools = new DBTools(mContext);
-                                        myUser = dbTools.insertUser(myUser);
-                                        Toast myToast = Toast.makeText(mContext, R.string.updatingReport, Toast.LENGTH_SHORT);
-                                        myToast.show();
-                                        Intent myIntent = new Intent(LoginActivity.this, MainActivity.class);
-                                        LoginActivity.this.startActivity(myIntent);
-                                    } finally {
-                                        if (dbTools != null)
-                                            dbTools.close();
-                                    }
-                                    break;
-
-                                case DialogInterface.BUTTON_NEGATIVE:
-                                    mPasswordView.setError(getString(R.string.error_incorrect_password));
-                                    mPasswordView.requestFocus();
-                            }
-                        }
-                    };
-                    AlertDialog.Builder builder = new AlertDialog.Builder(this.mContext);
-                    builder.setMessage(R.string.confirm_registry).setPositiveButton(R.string.yes, dialogClickListener)
-                            .setNegativeButton(R.string.no, dialogClickListener).show();
-                }
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
             }
         }
-
 
         @Override
         protected void onCancelled() {

@@ -22,9 +22,9 @@ class DB_Functions {
      * Storing new user
      * returns user details
      */
-    public function storeUser($Id,$User) {
+    public function storeUser($phone_no,$email,$username,$password) {
         // Insert user into database
-        $result = mysql_query("INSERT INTO users VALUES($Id,'$User')");
+        $result = mysql_query("INSERT INTO LOGIN VALUES($phone_no,'$email,'$username,'$password')");
  
         if ($result) {
             return true;
@@ -42,7 +42,7 @@ class DB_Functions {
      * Getting all users
      */
     public function getAllUsers() {
-        $result = mysql_query("select * FROM users");
+        $result = mysql_query("select * FROM LOGIN");
         return $result;
     }
 }

@@ -14,11 +14,11 @@
 		<string>https://github.com/mmb16/bot.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DB code/morfdb.xcodeproj</string>
+	<string>DB code/botdb/morfdb.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>ACD795764F312D6D5A4847AF9C5B16FA232CC262</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mmb16/bot.git</string>

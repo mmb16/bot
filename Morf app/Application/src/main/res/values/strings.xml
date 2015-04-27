@@ -45,5 +45,8 @@
     <string name="title_activity_split">Split</string>
     <string name="title_activity_pay">Pay</string>
     <string name="title_activity_request">Request</string>
+    <string name="title_activity_fblogin">FBLogin</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_login1">Login1</string>
 
 </resources>
