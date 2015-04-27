@@ -514,7 +514,7 @@ available. Please contact the developer for assistance.</string>
     <string name="title_activity_find_friends">FindFriends</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/values/strings_activity_login.xml -->
     <eat-comment/>
-    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_login">BoT</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_login1">Login1</string>

@@ -96,7 +96,7 @@ public class MainActivity extends ActionBarActivity  {
         startActivity(new Intent(Settings.ACTION_SETTINGS));
     }
     private void signOut() {
-        startActivity(new Intent (this, Login1.class));
+        startActivity(new Intent (this, LoginActivity.class));
     }
 
     private void openSplit() {
