@@ -51,6 +51,13 @@
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-07db2080307183464c21cff470922572fdc33820.jar" />
     </item>
     <item
+        jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/Parse-1.9.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1b065010f3c9d441ede9078aca8eabcd1c81e647">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/Parse-1.9.1-0d1b78362e9e0d86a4a1fdb3bf945484a9654bf2.jar" />
+    </item>
+    <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
         jumboMode="false"
         revision="21.1.1"
@@ -420,6 +427,13 @@
         revision="21.1.1"
         sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
         <dex dex="/Users/MohB/Desktop/Morf app/Application/build/intermediates/pre-dexed/debug/classes-03054d75261ae5a08f5ed31a88f00b236cc56496.jar" />
+    </item>
+    <item
+        jar="/Users/MohB/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-679f396c0f5769f5bf78dcbb8f6fd01fad514828.jar" />
     </item>
     <item
         jar="/Users/MohB/Desktop/bot/Morf app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"

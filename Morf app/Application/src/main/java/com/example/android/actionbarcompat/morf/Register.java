@@ -15,7 +15,7 @@ import android.widget.EditText;
 
 
 public class Register extends ActionBarActivity implements View.OnClickListener{
-    EditText etName, etAge, etUsername, etPassword;
+    EditText etName, etAge, etUsername, etPassword,etEmail;
     Button bRegister;
 
     @Override

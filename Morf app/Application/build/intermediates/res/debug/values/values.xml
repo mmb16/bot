@@ -499,8 +499,9 @@ available. Please contact the developer for assistance.</string>
     <string name="pendingT">Pending Transactions</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/src/main/res/values/strings_activity_login.xml -->
     <eat-comment/>
+    <string name="progress_login">Signing in</string>
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
+    <string name="prompt_password">Password</string>
     <!-- From: file:/Users/MohB/Desktop/bot/Morf%20app/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
